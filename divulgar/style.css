@@ -1,0 +1,144 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  body{
+    
+    background-image: repeating-linear-gradient(to bottom , rgb(138, 43, 226) , rgb(202, 205, 236)  );
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    
+
+      font-family: 'Karla', sans-serif;
+      
+  }
+  header{
+    
+      
+    
+    margin-top: 36px;
+  }
+  
+  p{
+      font-size: 20px;
+      text-align: center;
+      color: rgb(255, 255, 255);
+      margin-bottom: 40px;
+      font-weight: 900;
+      padding-top: 18px;
+  }
+
+  main .imagem{
+    display: block;
+    
+    margin: auto;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    box-shadow: 0px 0px 13px 3px rgba(15, 15, 15, 0.418)
+   
+ }
+    
+ main .imagem:hover {
+  
+    /*opacity: 0.1;*/
+  }
+
+
+   .primeiro{
+     
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: transparent;
+      width: 700px;
+      height: 58px;
+      margin: auto;
+      margin-bottom: 18px;
+      position: relative;
+      border: 2px solid rgb(255, 255, 255);
+      text-align: center;
+      transition: 0.3s;
+      
+      
+     }
+  .primeiro  a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      height: 58px;
+      width: 700px;
+      cursor: pointer; 
+      
+      
+    }
+
+    .primeiro  a:hover {
+    color:rgb(54, 54, 175);
+    background-color: rgb(255, 255, 255);
+    
+   }
+
+  .primeiro > .img-pri{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    position: absolute;
+    margin-left: 5px;
+    width: 45px;
+    height: 45px;
+    border: 1px solid #000;
+    box-shadow: 0px 0px 4px 1px rgba(15, 15, 15, 0.418);
+    transition: 100ms cubic-bezier(.45, .97, .68, 2.48);
+  }
+  .primeiro > .img-pri:hover{
+    transform: scale(1.08);
+  }
+    footer > p {
+    margin: 13px;
+    padding: 16px;
+    
+  }
+
+ 
+
+
+    @media (max-width: 720px) {
+        main{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          min-height: 90%;
+          
+        }
+        main .primeiro{
+          
+          
+          
+          max-width: 90%;
+         min-height:  58px;
+          }
+         
+        }
+    @media (max-width: 370px) {
+      main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 90%;
+        
+      }
+      main .primeiro {
+        
+        
+        
+       max-width: 90%;
+       min-height:  58px;
+        }
+      }
